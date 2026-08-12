@@ -1,5 +1,5 @@
 import BottomNav from "../../components/BottomNav";
-import TaskItem from "../../components/TaskItem";
+import TaskManager from "../../components/TaskManager";
 
 export default function TasksPage() {
   return (
@@ -14,30 +14,7 @@ export default function TasksPage() {
             Everything you need to get done.
           </p>
 
-          <section className="mt-8">
-            <h2 className="text-lg font-semibold">
-              Today
-            </h2>
-
-            <div className="mt-3 space-y-3">
-              <TaskItem title="Submit course registration" />
-              <TaskItem title="Email professor" />
-            </div>
-          </section>
-
-          <section className="mt-8">
-            <h2 className="text-lg font-semibold">
-              Upcoming
-            </h2>
-
-            <div className="mt-3 space-y-3">
-              <TaskItem title="Complete PRCV copyright" />
-            </div>
-          </section>
-
-          <button className="mt-8 w-full rounded-2xl border border-gray-300 bg-white px-4 py-4 font-medium">
-            + Add Task
-          </button>
+          <TaskManager />
         </div>
       </main>
 
